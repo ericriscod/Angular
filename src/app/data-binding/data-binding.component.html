@@ -1,0 +1,99 @@
+<section>
+    <section>
+        <h1>Data Binding</h1>
+        <p>É uma forma de exibir dados em seu component HTML, nada mais do que trabalhar com dados.</p>
+        <ul>
+            <li>Interpolation</li>
+            <li>Property Binding</li>
+            <li>Two-way Binding</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>Interpolation</h2>
+
+        <p>A interpolação de texto permite que você incorpore valores dinâmicos em seus modelos HTML.</p>
+
+        <h3>HTML</h3>
+        <p>&LT;h1&#62; &#123; &#123; title &#125; &#125; &LT;h1&#62;</p>
+
+        <h3>CLASS TS</h3>
+        <p>public title: string = "Bem vindo!";</p>
+    </section>
+
+    <section>
+        <h2>Property Binding</h2>
+
+        <p>Ajuda a definir valores para propriedades de elementos ou diretivas HTML</p>
+
+        <h3>HTML</h3>
+        <p>&LT;button [disabled] = "disabledButton"&#62;Button&LT;button&#62;</p>
+        <p>&LT;img [src] = "itemImageUrl"&#62;
+        <p>&LT;img src = &#123; &#123; itemImageUrl &#125;&#125; &#62;</p>
+    </section>
+
+    <section>
+        <h2>Event Binding</h2>
+
+        <p>É a associação de eventos que permite você escutar e responder às ações do usuário, como pressionamentos de
+            tecla, movimentos do mouse, cliques e toque.</p>
+
+        <h3>HTML</h3>
+        <p>&LT;button (click) = "calc()"&#62;Button&LT;button&#62;</p>
+    </section>
+
+    <section>
+        <h2>Two-way Binding</h2>
+
+        <p>É a união do property-binding com event-binding</p>
+        <p>Use para ouvir eventos e atualizar valores simultaneamente entre os componentes pai e filho.</p>
+
+        <h3>HTML</h3>
+        <p>&LT;input [(mgModal)] = "nome"&#62;</p>
+        <p>&LT;span&#62; &#123; &#123; nome &#125; &#125; &lt;span&#62;</p>
+
+        <h3>CLASS TS</h3>
+        <p>public nome = "Ericris"</p>
+    </section>
+</section>
+
+
+
+<section>
+    <section>
+        <h1>Diretivas</h1>
+        <p>As diretivas são classes que adicionam comportamento adicional aos elementos ems seus aplicativos Angular.
+        </p>
+
+        <p>Com as diretivas integradas do Angular,você pode gerenciar formulários, listas, estilos e o que os usuários
+            veem.</p>
+
+        <p>As diretivas são separadas de algumas formas, como:</p>
+        <ul>
+            <li>Diretivas de atributo</li>
+            <li>Diretivas estruturais</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Diretivas de atributo</h2>
+
+        <p>Que alteram a aparêcia ou conportamento de um elemento, componente ou outra diretiva.</p>
+
+        <p><span>NgClass - </span> adiciona e remove um conjunto de classes CSS.</p>
+        <p><span>NgStyle - </span> adiciona e remove um conjunto de estilos HTML.</p>
+        <p><span>NgModal - </span> adiciona vinculação de dados bidirecional a um elemento de formulário HTML.</p>
+    </section>
+
+    <section>
+        <h2>Diretivas estruturais</h2>
+
+        <p>Eles moldam ou remodelam a estrutura do DOM, adicionando, removendo e manipulando os elementos do host
+            aos quais estão anexados.</p>
+
+        <p><span>NgIf - </span> Condicionalmente cria ou descarta visualizações do modelo.</p>
+        <p><span>NgFor - </span> Repete um nó para cada item de uma lista.</p>
+        <p><span>NgSwitch - </span> Um conjunto de diretivas que alternam entre visões alternativas.</p>
+    </section>
+</section>

@@ -1,0 +1,17 @@
+<div>
+    <h1 [ngClass]="{'active': isActive, 'disable':!isActive}">ngClass</h1>
+    <h1 [ngStyle]="{'display': display, 'text-align': 'center'}" [ngClass]="{'active':isActive, 'disable':!isActive}">
+        ngStyle</h1>
+</div>
+
+<br>
+
+<div>
+    <input type="text" [(ngModel)]="nome">
+    <button type="button" (click)="enviar()">Salvar</button>
+
+    <ul>
+        <li *ngFor="let item of lista">{{item.nome}}</li>
+    </ul>
+
+</div>

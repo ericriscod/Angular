@@ -1,0 +1,12 @@
+.active {
+    text-align: center;
+    color: white;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.disable {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: green;
+}
